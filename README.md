@@ -22,7 +22,7 @@
 
 <p>When I mention enhancing older releases, a lot of people look at me like I'm crazy. “Why would you ever do that?” they ask, as though I'm the world's biggest sucker. Here's where you need to understand why that is necessary (common, even) in the world of RESTful APIs.</p>
 
-<p>The following chart shows how an endpoint can change over time. Let's say you maintain a RESTful API for managing cars at a dealership. All of these are POST calls that accept a car model. I've defined this model in <a href="https://github.com/raml-org/raml-spec/blob/raml-10/versions/raml-10/raml-10.md">RAML</a>, but I've only included the properties here for brevity.</p>
+<p>The following chart shows how an endpoint can change over time. Let's say you maintain a RESTful API for managing cars at a dealership. All of these are POST calls that accept a car model. I've defined this model in <a href="https://github.com/raml-org/raml-spec">RAML</a>, but I've only included the properties here for brevity.</p>
 
 <p><img alt="" height="399" src="https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/v_table.png" width="795"></p>
 
@@ -70,7 +70,7 @@
 
 <p>First, we'll create a branch that represents our first “beta” release – <strong>v0</strong>. This branch contains what will soon become v1 of the API. (If you've already checked in code to <strong>master</strong>, you can rename it to <strong>v0</strong> and delete the master branch!) Remember to set the default branch to <strong>v0</strong> in your [Stash] repository settings:</p>
 
-<p><img alt="" height="445" src="https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/set_default_branch.png" width="1254"></p>
+<p><img alt="" height="345" src="https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/set_default_branch.png" width="1254"></p>
 
 <p>When you're ready to release version 1 of your API, you create a new branch. You can use <a href="https://docs.npmjs.com/cli/version">npm version</a> to tell the project how to increment itself according to SemVer rules, which will create an isolated commit with a tag. (Note that I should have pushed <em>with tags </em>here: git push origin v1 --tags).</p>
 
