@@ -9,7 +9,7 @@
 
 <p>For the purpose of this article, we assume that the git repository only contains the RESTful API <em>specification</em> (i.e. RAML, Swagger or JSON API files) As such, I'm going focus only on things worthy of major or minor releases according to <a href="http://semver.org/">Semantic Versioning</a> (aka SemVer). Bug fixes which increment the patch number are related to the <em>incorrect implementation</em> of an unchanged specification, and therefore out of scope here.</p>
 
-<h2>Git Branching Strategy Options</h2>
+<h4>Git Branching Strategy Options</h4>
 
 <p>When I mention git branching strategies, a lot of people assume I'm talking about <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">the Gitflow workflow</a>. Some propose Gitflow as a solution for managing releases, or they describe <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">the Feature Branch workflow</a> and call it Gitflow. Occasionally I'll even get a bit of mansplaining about what a branch is. So let's clear the air.</p>
 
@@ -21,7 +21,7 @@
 
 <p>Given this, can you use Gitflow to track, deploy and troubleshoot multiple releases at a time? Yes. Can you use Gitflow to fix or enhance many releases at a time? <a href="http://stackoverflow.com/questions/16386323/following-git-flow-how-should-you-handle-a-hotfix-of-an-earlier-release">No.</a> We need a different model.</p>
 
-<h2>Previous Versions: To Enhance or Not to Enhance</h2>
+<h4>Previous Versions: To Enhance or Not to Enhance</h4>
 
 <p>When I mention enhancing older releases, a lot of people look at me like I'm crazy. “Why would you ever do that?” they ask, as though I'm the world's biggest sucker. Here's where you need to understand why that is necessary (common, even) in the world of RESTful APIs.</p>
 
@@ -46,7 +46,7 @@
 
 <p>In a perfect world, everyone would be on the latest version. But we don't live in a perfect world, which is why we support multiple versions in the first place. Perhaps such enhancements are experimental business strategies that can revolutionize or devastate the client's sales. I believe it's better to figure that out on a passive older release, so <em>you can decide </em>whether or not to include it in the next version.</p>
 
-<h2>The SemVer Workflow</h2>
+<h4>The SemVer Workflow</h4>
 
 <p>The basic premise of the SemVer workflow is to keep each major release in its own branch.</p>
 
@@ -69,7 +69,7 @@
 <p>Let’s say I want to bring the vehicle’s interiorColor field into version 3 of the API. &nbsp;In this example, I’m on the <strong>v3</strong> branch and cherry-picking a commit from the <strong>v2</strong> branch. &nbsp;&nbsp;If I wasn’t paying close attention, I might choose the wrong version, and things would get very ugly.<br>
 	&nbsp;</p>
 
-<h2>The SemVer Workflow in Action – An Example</h2>
+<h4>The SemVer Workflow in Action – An Example</h4>
 
 <p>First, we'll create a branch that represents our first “beta” release – <strong>v0</strong>. This branch contains what will soon become v1 of the API. (If you've already checked in code to <strong>master</strong>, you can rename it to <strong>v0</strong> and delete the master branch!) Remember to set the default branch to <strong>v0</strong> in your [Stash] repository settings:</p>
 
@@ -89,6 +89,6 @@
 
 <p><img alt="" height="407" src="https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/split_tree_after_2.2.png" width="781"></p>
 
-<h2>Summary</h2>
+<h4>Summary</h4>
 
 <p>Git is a powerful and flexible tool. &nbsp;Standard workflows are fundamental in helping teams keep code organized, but they should never box you in. &nbsp;In general, the Feature Branch and Gitflow workflows are fantastic, but you can adapt them to the needs of your project and team. &nbsp;I see the SemVer workflow as one such adaptation. &nbsp;It just so happens that this model applies nicely to multi-versioned RESTful APIs.</p>
