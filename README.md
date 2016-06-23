@@ -1,6 +1,7 @@
 <p><img alt="" height="291" src="https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/tree.jpg" width="800"></p>
 
-<h2>Semflow: RESTful API Version Management with Git</h2>
+<h2>Semflow: The SemVer Workflow</h2>
+<h4>A Git Workflow for Version Management: RESTful APIs and beyond</h4>
 
 <p>When I mention versioning, a lot of people assume I'm talking about how someone specifies the version of a RESTful API that he or she wants to consume. Namely, <a href="https://www.troyhunt.com/your-api-versioning-is-wrong-which-is/">URI vs content negotiation</a>. That's not what this article is about, but it is requisite to remember that if you are asking your consumers specify which version they want, you are presumably offering (and to some degree maintaining) multiple versions at a time. If you only offered one version at a time, consumers wouldn't have to specify which one they want. That would be silly, because there's only one choice.</p>
 
