@@ -58,7 +58,7 @@
 
 <p>This works, but personally, I think it’s confusing. &nbsp;If we’re going to maintain branches for each major release, I would rather each branch name be explicit. &nbsp;I don’t like having to wonder what major version these branches contain.</p>
 
-<p><img alt="" height="400" src="https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/semflow.png" width="356"></p>
+<p><img alt="" height="572" src="https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/semflow.png" width="509"></p>
 
 <p>In a SemVer workflow, <strong>master</strong> and <strong>develop</strong> do not exist. &nbsp;The name of the “trunk” branch is <strong>v0</strong> or <strong>v1</strong>. &nbsp;Minor releases get a tag (i.e. 1.1.0), while major versions get a tag (i.e. 2.0.0) and a new branch (i.e. v2). &nbsp;Code on each branch’s HEAD (the leaves in the tree) can still be hotfixed if necessary, and enhanced with code from feature branches.</p>
 
